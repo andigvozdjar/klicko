@@ -1,0 +1,14 @@
+
+  header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 56px);
+    /* background-image: url("../img/header.jpg"); */
+    background-image: url("../../assets/img/headera.jpg"); 
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .heading {
+    position: relative;
+    top: 40px
+  }

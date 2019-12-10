@@ -1,0 +1,224 @@
+<app-navbar [aColor]="'white'"></app-navbar>
+<div id="page-top">
+    <header class="masthead text-center text-white d-flex">
+      <div class="container heading">
+        <div class="row">
+          <div class="col-lg-8 offset-1 text-left">
+            <h1 class="text-uppercase mainHed mb-5">Dobrodošli</h1>
+            <br>
+            <h2>Bavimo se uzgojem klica, <br> mikropovrća <br> i soka od <br> spelte</h2>
+          </div>
+          <div class="col-lg-10 text-left offset-1  my-5">
+            <p class="text-faded my-5">#supportlocal&nbsp;</p>
+            <div class="lineDiv my-5"></div>
+          <a class="btn btn-primary btn-xl js-scroll-trigger mainBtn" href="#about">saznaj više</a></div>
+          <hr>
+        </div>
+      </div>
+    </header>
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Saznajte više o nama i našoj proizvodnji&nbsp;</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4 lead">Mi smo jedna porodična firma koja se 2016 godine počela baviti proizvodnjom klica za svoje potrebe, kasnije i za Vaše i tako počinje naša priča.<br>
+              Trenutno smo ozbiljni proizvođači klica, mikropovrća i ljekovitog soka od pšenice.<br>
+              Naš glavni cilj je da Vas upoznamo i uprostimo našu komunikaciju.<br>
+              Sve što Vas zanima možete naći na ovom sajtu.</p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">proizvodi</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Proizvodimo i nudimo Vama</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container productsCont">
+        <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+           <a  class ="textno" [routerLink]="['/klice']">
+            <div class="service-box mt-5 mx-auto"><em class="fas fa-4x mb-3 sr-icon-3"><img src="../../assets/img/klice.jpg"  alt=""/></em>
+              <h3 class="mb-3 " > klice </h3>
+              <p class="text-muted mb-0">najzdraviji oblik biljke, mineralno energetske bombe</p>
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto"><em class="fas fa-4x text-primary mb-3 sr-icon-3"><img src="../../assets/img/mikro.jpg"  alt=""/></em>
+              <h3 class="mb-3">mikropovrće&nbsp;</h3>
+              <p class="text-muted mb-0">malo starije od klica, ali svojim izgledom i ukusom najviše mame</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto"><em class="fas fa-4x text-primary mb-3 sr-icon-3"><img src="../../assets/img/psenica.jpg"  alt=""/></em>
+              <h3 class="mb-3">sok od pšenične trave</h3>
+              <p class="text-muted mb-0">zelena krv</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto"><em class="fas fa-4x text-primary mb-3 sr-icon-3"><img src="../../assets/img/srce.jpg"  alt=""/></em>
+              <h3 class="mb-3">napravljeno s ljubavlju</h3>
+              <p class="text-muted mb-0">svaki naš proizvod je domaći<br>
+                #supportlocal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<hr>
+    <section class="p-0" id="portfolio">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
+          <div class="col-lg-3 col-md-6">
+            <a class="portfolio-box" href="../../assets/img/portfolio/fullsize/1.png">
+              <img class="img-fluid" src="../../assets/img/portfolio/thumbnails/1.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    klice
+                  </div>
+                  <div class="project-name">
+                   alfalfa
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a class="portfolio-box" href="../../assets/img/portfolio/fullsize/2.png">
+              <img class="img-fluid" src="../../assets/img/portfolio/thumbnails/2.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    klice mix1
+                  </div>
+                  <div  class="project-name">
+                      <br>
+                        rotkvica china rose <br>
+                        mungo grah <br>
+                        alfalfa
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a class="portfolio-box" href="../../assets/img/portfolio/fullsize/3.png">
+              <img class="img-fluid" src="../../assets/img/portfolio/thumbnails/3.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                   mikropovrće
+                  </div>
+                  <div class="project-name">
+                    brokula
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a class="portfolio-box" href="../../assets/img/portfolio/fullsize/4.png">
+              <img class="img-fluid" src="../../assets/img/portfolio/thumbnails/4.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                   mikropovrće mix 1
+                  </div>
+                  <div class="project-name">
+                   <br>
+                    cvekla <br>
+                    crveni kupus<br>
+                    suncokret
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a class="portfolio-box" href="../../assets/img/portfolio/fullsize/5.png">
+              <img class="img-fluid" src="../../assets/img/portfolio/thumbnails/5.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    klice mix 2
+                  </div>
+                  <div class="project-name">
+                     <br>
+                    rotkvica Daikon <br>
+                    leće<br>
+                    alfalfa
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a class="portfolio-box" href="../../assets/img/portfolio/fullsize/6.png">
+              <img class="img-fluid" src="../../assets/img/portfolio/thumbnails/6.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    klice mix 3 
+                  </div>
+                  <div class="project-name">
+                    <br>
+                    piskavica <br>
+                    alfalfa<br>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="col-lg-3 col-md-6">
+            <a class="portfolio-box" href="../../assets/img/portfolio/fullsize/1.png">
+              <img class="img-fluid" src="../../assets/img/portfolio/thumbnails/8.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    mikropovrce mix 2
+                  </div>
+                  <div class="project-name"><br>
+                    rukola<br>
+                    muštarda (senf) <br>
+                    rotkvica china rose<br>
+                            <br>
+                   
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+           <div class="col-lg-3 col-md-6">
+            <a class="portfolio-box" href="../../assets/img/portfolio/fullsize/1.png">
+              <img class="img-fluid" src="../../assets/img/portfolio/thumbnails/7.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    sok od spelte
+                  </div>
+                  <div class="project-name"><br>
+                   100% organski proizvod
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+       
+          
+          
+        </div>
+      </div>
+    </section>
+
+
+</div>
