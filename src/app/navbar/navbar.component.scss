@@ -1,11 +1,12 @@
 @import "../../variables.scss";
 
 #mainNav {
-  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-  background-color: rgba(255, 255, 255, 0.233);
   -webkit-transition: all 0.2s;
   transition: all 0.5s;
   padding: 0.2rem 0.5rem;
+}
+.darkNav {
+  color: $k_bg_dark !important;
 }
 
 #mainNav .navbar-brand {
