@@ -1,8 +1,5 @@
 
   header.masthead {
-    padding-top: 10rem;
-    padding-bottom: calc(10rem - 56px);
-    /* background-image: url("../img/header.jpg"); */
     background-image: url("../../assets/img/headera.jpg"); 
     background-position: center center;
     background-size: cover;
@@ -10,5 +7,25 @@
 
   .heading {
     position: relative;
-    top: 40px
+    top: 12%
+  }
+  @media (max-width: 992px) {
+    .heading{
+      margin-top: 7rem;
+      transform: scale(1.2);
+
+    }
+  }
+  @media (max-width: 768px) {
+    .portfolio-box img {
+      padding: 45px;
+    }
+
+  }
+  
+  @media (max-width: 576px) {
+    .portfolio-box img {
+      padding: 25px;
+    }
+
   }

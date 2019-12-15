@@ -1,14 +1,34 @@
 
   header.masthead {
-    padding-top: 10rem;
-    padding-bottom: calc(10rem - 56px);
+    // padding-top: 10rem;
+    // padding-bottom: calc(10rem - 56px);
     /* background-image: url("../img/header.jpg"); */
     background-image: url("../../assets/img/headerKlice.jpg"); 
     background-position: center center;
     background-size: cover;
+    height: 100vh;
   }
-
   .heading {
     position: relative;
-    top: 130px
+    top: 30%;
+  }
+  
+  @media (max-width: 992px) {
+    .heading{
+      margin-top: 12rem;
+      transform: scale(1.2);
+
+    }
+    header.masthead {
+      background-position: 80% 50%;
+    }
+  }
+  @media (max-width: 576px) {
+    .heading{
+      margin-top: 8rem;
+
+    }
+    header.masthead {
+      background-position: 70% 50%;
+    }
   }

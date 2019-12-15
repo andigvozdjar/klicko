@@ -1,27 +1,35 @@
 <nav [ngClass]="{'navbar-shrink': scrollNav}" class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
   <div class="container navDim">
-    <p id="p-logo"><a class="navbar-brand js-scroll-trigger mt-3" [routerLink]="['']"><img
-          src="../../assets/img/klickooo.png" alt="" id="logo" /></a></p>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      <a id="navBrand" class="navbar-brand js-scroll-trigger mt-0 mt-lg-3" [routerLink]="['']">
+        <img src="../../assets/img/klickooo.png" alt="" id="logo" />
+      </a>
+    <button id="navbarBtn" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
       data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
       ariad-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto Color">
-          <!-- [ngClass]="{'text-black': aColor=='black'}"  -->
-          <!-- <ul [ngStyle]="{'color':aColor}" class="navbar-nav ml-auto"> -->
-        <li class="nav-item"> 
-          <a  [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger" href="#about">O NAMA</a>
+        <li class="nav-item">
+          <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger" href="#about">O NAMA</a>
         </li>
-        <li class="nav-item"> 
-          <a  [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger" [routerLink]="['/klice']">Klice</a> 
+        <li class="nav-item">
+          <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger"
+            [routerLink]="['/klice']">Klice</a>
         </li>
-        <li class="nav-item"> 
-          <a  [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger" [routerLink]="['/microgreens']" >Povrce</a>
+        <li class="nav-item">
+          <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger"
+            [routerLink]="['/microgreens']">Povrce</a>
         </li>
-        <li class="nav-item"> 
-          <a  [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger" href="#contact">KONTAKT</a> 
+        <li class="nav-item">
+          <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger" href="#contact">Sok od
+            spelte</a>
+        </li>
+        <li class="nav-item">
+          <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger" href="#contact">Radionice</a>
+        </li>
+        <li class="nav-item">
+          <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger" href="#contact">Galerija</a>
         </li>
       </ul>
     </div>
