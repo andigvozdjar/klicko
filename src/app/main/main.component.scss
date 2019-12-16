@@ -5,11 +5,9 @@
     background-size: cover;
   }
 
-  .heading {
-    position: relative;
-    top: 20%
-  }
-  
+  // .heading {
+  //   margin-top: 3rem;
+  // }
 section {
   padding: 7rem 0;
 }
@@ -22,11 +20,11 @@ section {
     // right: -40px;
   }
   @media (max-width: 992px) {
-    .heading{
-      margin-top: 10rem;
-      transform: scale(1.2);
+    // .heading{
+    //   margin-top: 10rem;
+    //   transform: scale(1.2);
 
-    }
+    // }
   }
   @media (max-width: 768px) {
     .portfolio-box img {

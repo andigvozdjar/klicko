@@ -8,21 +8,12 @@
     background-size: cover;
     height: 100vh;
   }
-  .heading {
-    position: relative;
-    top: 30%;
-  }
   
 section {
   padding: 3rem 0;
 }
   
   @media (max-width: 992px) {
-    .heading{
-      margin-top: 12rem;
-      transform: scale(1.2);
-
-    }
     header.masthead {
       background-position: 80% 50%;
     }
@@ -34,5 +25,10 @@ section {
     }
     header.masthead {
       background-position: 70% 50%;
+    }
+  }
+  @media (max-width: 400px) {
+    header.masthead {
+      background-position: 65% 50%;
     }
   }

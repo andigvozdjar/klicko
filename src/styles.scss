@@ -75,6 +75,10 @@ a:hover {
   color: $k-main;
 }
 
+.mainContent {
+  margin-top: 10rem;
+}
+
 
 .bg-primary {
   background-color: $k-main !important;
@@ -275,4 +279,11 @@ header.masthead p {
   .lead {
     font-size: 1rem;
   }
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    margin-top: 5rem;
+  }
+
 }

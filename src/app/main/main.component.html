@@ -1,14 +1,13 @@
 <app-navbar [aColor]="'white'"></app-navbar>
-<div id="page-top">
     <header class="masthead text-center text-white d-flex">
-      <div class="container heading">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-8 offset-1 text-left">
+          <div class="col-lg-8 offset-1 mainContent text-left">
             <h1 class="text-uppercase mainHed">Dobrodošli</h1>
             <br>
             <h2>Bavimo se uzgojem klica, <br> mikropovrća <br> i soka od <br> spelte</h2>
           </div>
-          <div class="col-lg-10 text-left offset-1">
+          <div class="col-11 text-left offset-1">
             <p class="text-faded my-5">#supportlocal&nbsp;</p>
             <div class="lineDiv my-5"></div>
         </div>
@@ -16,6 +15,7 @@
         </div>
       </div>
     </header>
+    
     <section class="bg-primary" id="about">
       <div class="container">
         <div class="row">
@@ -42,28 +42,28 @@
       </div>
       <div class="container productsCont">
         <div class="row">
-        <div class="col-lg-3 col-md-6 text-center">
+        <div class="col-lg-3 col-6 p-4 p-lg-4 text-center">
            <a  class ="textno" [routerLink]="['/klice']">
-            <div class="service-box mt-5 mx-auto"><em class="fas fa-4x mb-3 sr-icon-3"><img src="../../assets/img/klice.jpg"  alt=""/></em>
+            <div class="service-box mt-5 mx-auto"><em class="fas fa-4x mb-3 sr-icon-3"><img src="../../assets/img/klice.jpg" class="img-fluid" alt=""/></em>
               <h3 class="mb-3 " > klice </h3>
               <p class="text-muted mb-0">najzdraviji oblik biljke, mineralno energetske bombe</p>
             </div>
             </a>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto"><em class="fas fa-4x text-primary mb-3 sr-icon-3"><img src="../../assets/img/mikro.jpg"  alt=""/></em>
+          <div class="col-lg-3 col-6 p-4 p-lg-4 text-center">
+            <div class="service-box mt-5 mx-auto"><img src="../../assets/img/mikro.jpg"  class="img-fluid" alt=""/>
               <h3 class="mb-3">mikropovrće&nbsp;</h3>
               <p class="text-muted mb-0">malo starije od klica, ali svojim izgledom i ukusom najviše mame</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto"><em class="fas fa-4x text-primary mb-3 sr-icon-3"><img src="../../assets/img/psenica.jpg"  alt=""/></em>
+          <div class="col-lg-3 col-6 p-4 p-lg-4 text-center">
+            <div class="service-box mt-5 mx-auto"><img src="../../assets/img/psenica.jpg"  class="img-fluid" alt=""/>
               <h3 class="mb-3">sok od pšenične trave</h3>
               <p class="text-muted mb-0">zelena krv</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto"><em class="fas fa-4x text-primary mb-3 sr-icon-3"><img src="../../assets/img/srce.jpg"  alt=""/></em>
+          <div class="col-lg-3 col-6 p-4 p-lg-4 text-center">
+            <div class="service-box mt-5 mx-auto"><img src="../../assets/img/srce.jpg"  class="img-fluid" alt=""/>
               <h3 class="mb-3">napravljeno s ljubavlju</h3>
               <p class="text-muted mb-0">svaki naš proizvod je domaći<br>
                 #supportlocal</p>
@@ -230,6 +230,3 @@
         </div>
       </div>
     </section>
-
-
-</div>
