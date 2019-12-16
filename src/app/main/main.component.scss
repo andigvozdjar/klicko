@@ -7,11 +7,23 @@
 
   .heading {
     position: relative;
-    top: 12%
+    top: 20%
+  }
+  
+section {
+  padding: 7rem 0;
+}
+  .infoIcon {
+    width: 30px;
+    opacity: .2;
+    // position: relative;
+    display: none;
+    // top: 75px;
+    // right: -40px;
   }
   @media (max-width: 992px) {
     .heading{
-      margin-top: 7rem;
+      margin-top: 10rem;
       transform: scale(1.2);
 
     }

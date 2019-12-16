@@ -20,7 +20,13 @@
 }
 
 #navbarBtn {
-  border: none;
+  position: fixed;
+  opacity: 0;
+}
+
+#navbarBtn img {
+  width: 37px;
+
 }
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
@@ -89,6 +95,12 @@
 @media (max-width: 992px) {
   #mainNav{
     background: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.105);
+  }
+  #navbarBtn {
+    opacity: .8;
+    top: 15px;
+    right: 100px;
   }
 }
 @media (max-width: 767px) {
@@ -106,8 +118,10 @@
     height: 20px;
   }
   #navbarBtn {
-    position: fixed;
-    top: 0px;
-    right: 5px;
+    top: 5px;
+    right: 73px;
+  }
+  #navbarBtn img {
+    width: 25px;
   }
 }
