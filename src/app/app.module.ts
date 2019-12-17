@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { MicroComponent } from './micro/micro.component';
+import { SpeltaComponent } from './spelta/spelta.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MicroComponent } from './micro/micro.component';
     KliceComponent,
     NavbarComponent,
     FooterComponent,
-    MicroComponent
+    MicroComponent,
+    SpeltaComponent
   ],
   imports: [
     BrowserModule,

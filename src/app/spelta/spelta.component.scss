@@ -1,0 +1,25 @@
+
+  header.masthead {
+    background-image: url("../../assets/img/spelta.jpeg"); 
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+  }
+  .main-content {
+    position: relative;
+    top: 10vh;
+  }
+  .spelta-second {
+    position: relative;
+    top: 30vh;
+    font-size: 50px ;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 10px;
+  }
+  .spelta-heading {
+    opacity: .95;
+    font-weight: 800;
+    font-size: 70px;
+    letter-spacing: 50px;
+  }

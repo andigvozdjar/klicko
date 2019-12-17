@@ -5,14 +5,9 @@
   transition: all 0.5s;
   padding: 0.2rem 0.5rem;
 }
+
 .darkNav {
   color: $k_bg_dark !important;
-}
-
-#mainNav .navbar-brand {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $k-main;
 }
 
 .navDim {
@@ -28,6 +23,7 @@
   width: 37px;
 
 }
+
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
   color: $k-main;
@@ -43,6 +39,11 @@
 
 #mainNav .navbar-nav>li.nav-item>a.nav-link:hover,
 #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover {
+  color: $k-main;
+}
+
+.darknav:hover,
+.darknav:focus {
   color: $k-main;
 }
 
@@ -92,34 +93,48 @@
     color: $k-main;
   }
 }
+
+@media (min-width: 992px) {
+  #navBrand {
+    margin-bottom: 14px;
+
+  }
+}
+
 @media (max-width: 992px) {
-  #mainNav{
+  #mainNav {
     background: rgba(255, 255, 255, 0.8);
     border-bottom: 2px solid rgba(0, 0, 0, 0.105);
   }
+
   #navbarBtn {
     opacity: .8;
     top: 15px;
     right: 10px;
   }
 }
+
 @media (max-width: 767px) {
-  #mainNav{
+  #mainNav {
     background: rgba(255, 255, 255, 0.8);
     height: 40px;
   }
-  #navBrand{
+
+  #navBrand {
     position: fixed;
     left: 50%;
     top: 15px;
     transform: translate(-50%, -50%);
   }
+
   #navBrand img {
     height: 20px;
   }
+
   #navbarBtn {
     top: 5px;
   }
+
   #navbarBtn img {
     width: 25px;
   }
