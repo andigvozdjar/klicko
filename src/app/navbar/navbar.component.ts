@@ -1,4 +1,6 @@
 import { Component, OnInit, HostListener, Input } from '@angular/core';
+import { TimelineMax, Elastic, Back, TweenLite, Power1 } from 'gsap';
+import { gsapAnimationsService } from '../gsap-animations/gsap-animations.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,14 +8,7 @@ import { Component, OnInit, HostListener, Input } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  scrollNav: boolean= false;
-  @Input() aColor: string 
-
-  constructor() { }
-
-  ngOnInit() {
-    console.log(this.aColor)
-  }
+  open_nav: boolean = true
   @HostListener("window:scroll", [])
   onWindowScroll() {
     if(scrollY<102){
@@ -23,5 +18,16 @@ export class NavbarComponent implements OnInit {
       this.scrollNav=true
     }
   }
+  scrollNav: boolean= false;
+  @Input() aColor: string;
 
+  constructor(private gsap: gsapAnimationsService) { }
+
+  ngOnInit() {
+    console.log(this.aColor);
+    this.gsap.timelineDef();
+  }
+  openCloseNav(){
+    this.gsap.openCloseNav()
+  }
 }

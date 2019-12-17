@@ -17,13 +17,36 @@
 #navbarBtn {
   position: fixed;
   opacity: 0;
+  z-index: 5;
 }
-
-#navbarBtn img {
-  width: 37px;
-
+.navigationCircle {
+  transform-origin: top right;
+  transform: rotate(-50deg);
+  background: rgba(255, 255, 255, 0.904);
+  position: fixed;
+  top: -50px;
+  right: -50px;
+  border-radius: 100% 0 100% 100%;
+  z-index: 2;
 }
-
+.closeNav {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.239);
+  top: 0;
+  right: 0;
+  display: none;
+}
+.hamburgerLines{
+  width: 30px;
+  margin: 5px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.774);
+  transform-origin: center;
+  border-radius: 2px;
+}
+.hamburgerLine3{
+  width: 20px;
+}
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
   color: $k-main;
@@ -135,7 +158,4 @@
     top: 5px;
   }
 
-  #navbarBtn img {
-    width: 25px;
-  }
 }

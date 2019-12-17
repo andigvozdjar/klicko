@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { MicroComponent } from './micro/micro.component';
 import { SpeltaComponent } from './spelta/spelta.component';
+import { AnimationComponent } from './gsap-animations/animation.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SpeltaComponent } from './spelta/spelta.component';
     NavbarComponent,
     FooterComponent,
     MicroComponent,
-    SpeltaComponent
+    SpeltaComponent,
+    AnimationComponent
   ],
   imports: [
     BrowserModule,
