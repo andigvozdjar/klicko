@@ -21,12 +21,12 @@
 }
 .navigationCircle {
   transform-origin: top right;
-  transform: rotate(-50deg);
+  transform: rotate(-60deg);
   background: rgba(255, 255, 255, 0.904);
   position: fixed;
-  top: -50px;
-  right: -50px;
-  border-radius: 100% 0 100% 100%;
+  top: -100px;
+  right: -100px;
+  // border-radius: 100% 0 100% 100%;
   z-index: 2;
 }
 .closeNav {
@@ -80,6 +80,11 @@
 #mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active:hover {
   background-color: transparent;
 }
+.mobile-nav-ul {
+  margin-top: 150px;
+  margin-right: 150px;
+  text-align: right;
+}
 
 @media (min-width: 992px) {
   #mainNav .navbar-nav>li.nav-item>a.nav-link {
@@ -120,7 +125,12 @@
 @media (min-width: 992px) {
   #navBrand {
     margin-bottom: 14px;
-
+  }
+  .navigationCircle {
+    display: none !important;
+  }
+  .closeNav {
+    display: none !important; 
   }
 }
 
@@ -157,5 +167,13 @@
   #navbarBtn {
     top: 5px;
   }
+  .mobile-nav-ul {
+    margin-right: 130px;
+  }
 
+}
+@media (max-width: 531px) {
+  .mobile-nav-ul {
+    margin-right: 120px;
+  }
 }

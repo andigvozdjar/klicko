@@ -5,21 +5,51 @@
     background-size: cover;
     height: 100vh;
   }
+  .section-image {
+    background-image: url("../../assets/img/sectionImage.jpg"); 
+    background-position: center center;
+    background-size: cover;
+    height: 30vh;
+  }
+  .spelta-daska{
+    background-image: url("../../assets/img/daskaSpelta.jpg"); 
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+
+  }
+  .tacnaSpelta {
+    background-image: url("../../assets/img/spelta1.jpg"); 
+    background-position: center center;
+    background-size: cover;
+    height: 32vh;
+
+  }
   .main-content {
     position: relative;
     top: 10vh;
   }
-  .spelta-second {
+  .main-content-spelta{
     position: relative;
-    top: 30vh;
-    font-size: 50px ;
+    top: 65vh;
     color: white;
-    font-weight: 700;
-    letter-spacing: 10px;
   }
-  .spelta-heading {
+  .bottom-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .spelta-main {
+    font-size: 4rem;
+    // font-weight: 700;
+    // letter-spacing: 10px;
     opacity: .95;
-    font-weight: 800;
-    font-size: 70px;
-    letter-spacing: 50px;
+    // font-weight: 800;
+    // letter-spacing: 50px;
   }
+  
+@media (max-width: 620px) {
+  .bottom-text {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}

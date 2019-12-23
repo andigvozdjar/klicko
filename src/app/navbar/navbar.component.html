@@ -1,21 +1,21 @@
 <nav [ngClass]="{'navbar-shrink': scrollNav}" class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <a (click)="openCloseNav()" id="navbarBtn">
-      <!-- <app-animation [type]="'navSvg'"></app-animation> -->
-      <div class="hamburgerLines hamburgerLine1"></div>
-      <div class="hamburgerLines hamburgerLine2"></div>
-      <div class="hamburgerLines hamburgerLine3"></div>
-    </a>
+  <a (click)="openCloseNav()" id="navbarBtn">
+    <!-- <app-animation [type]="'navSvg'"></app-animation> -->
+    <div class="hamburgerLines hamburgerLine1"></div>
+    <div class="hamburgerLines hamburgerLine2"></div>
+    <div class="hamburgerLines hamburgerLine3"></div>
+  </a>
   <div class="container navDim">
-      <a id="navBrand" class="navbar-brand js-scroll-trigger mt-0 mt-lg-3" [routerLink]="['']">
-        <img src="../../assets/img/klickooo.png" alt="" id="logo" />
-      </a>
+    <a id="navBrand" class="navbar-brand js-scroll-trigger mt-0 mt-lg-3" [routerLink]="['']">
+      <img src="../../assets/img/klickooo.png" alt="" id="logo" />
+    </a>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto Color">
         <li class="nav-item">
-          <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger" href="#about">O NAMA</a>
+          <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger" (click)="aboutUs()" >O NAMA</a>
         </li>
         <li class="nav-item">
-          <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger"
+          <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger" 
             [routerLink]="['/klice']">Klice</a>
         </li>
         <li class="nav-item">
@@ -23,7 +23,8 @@
             [routerLink]="['/microgreens']">Povrce</a>
         </li>
         <li class="nav-item">
-          <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger" [routerLink]="['/sok-od-spelte']">Sok od
+          <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger"
+            [routerLink]="['/sok-od-spelte']">Sok od
             spelte</a>
         </li>
         <li class="nav-item">
@@ -35,6 +36,29 @@
       </ul>
     </div>
   </div>
-  <div class="navigationCircle cursosPointer"></div>
+
+  <div class="navigationCircle cursosPointer">
+    <ul  class="navbar-nav darkNav mobile-nav-ul">
+      <li class="nav-item nav1">
+        <a class="nav-link " (click)="aboutUs()" >O NAMA</a>
+      </li>
+      <li class="nav-item nav2">
+        <a class="nav-link " [routerLink]="['/klice']">Klice</a>
+      </li>
+      <li class="nav-item nav3">
+        <a class="nav-link " [routerLink]="['/microgreens']">Povrce</a>
+      </li>
+      <li class="nav-item nav4">
+        <a class="nav-link " [routerLink]="['/sok-od-spelte']">Sok od
+          spelte</a>
+      </li>
+      <li class="nav-item nav5">
+        <a class="nav-link " href="#contact">Radionice</a>
+      </li>
+      <li class="nav-item nav6">
+        <a class="nav-link " href="#contact">Galerija</a>
+      </li>
+    </ul>
+  </div>
   <div (click)="openCloseNav()" class="closeNav"></div>
 </nav>
