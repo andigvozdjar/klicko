@@ -7,8 +7,8 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 })
 export class SeoMailService {
   url: string = 'http://localhost:3000/send';
-  headersAuth = new HttpHeaders().set('x-api-key', 'Rmlki3wVW47GRMn55Egvh68GbVXJzGSS5etGVzID');
-  httpOptionsAuth = { headers: this.headersAuth };
+  // headersAuth = new HttpHeaders().set('x-api-key', 'Rmlki3wVW47GRMn55Egvh68GbVXJzGSS5etGVzID');
+  // httpOptionsAuth = { headers: this.headersAuth };
 
   constructor(private meta: Meta, private title: Title, private http: HttpClient) { }
 //   generateTags(config) {
@@ -39,8 +39,9 @@ export class SeoMailService {
 //     return this.http.post(this.apiUrl, data, this.httpOptionsAuth)
 //   }
   sendMessage(messageContent: any) {
-    return this.http.post(this.url, JSON.stringify(messageContent),
-    { headers: new HttpHeaders({ 'Content-Type': 'application/json' }), responseType: 'text' });
+    return this.http.post(this.url,
+      JSON.stringify(messageContent),
+      { headers: new HttpHeaders({ 'Content-Type': 'application/json' }), responseType: 'text' });
   }
   
 

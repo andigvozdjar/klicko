@@ -8,3 +8,12 @@
   #contact a {
     color: $white;
   }
+  .footer-button {
+    border: 1px solid $k-main;
+    color: $k-main;
+  }
+  .footer-button:hover {
+    border: 1px solid $k-secon;
+    color: $k-secon;
+
+  }
