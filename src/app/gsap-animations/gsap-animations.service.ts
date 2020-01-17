@@ -23,6 +23,7 @@ export class gsapAnimationsService {
     }
 
     openCloseNav(w){
+        console.log('open')
         this.innerWidth = w
         if(this.open_nav){
           this.navbarTl.play().timeScale(this.playTime)
@@ -79,15 +80,5 @@ export class gsapAnimationsService {
            x:0,
            opacity: 1
        }, "-=.15");
-       
-
-    //    tl.fromTo(element, 1, {left:0}, {left:-100})  
-        // this.navbarTl.staggerFromTo(['.nav1,.nav2,.nav3,.nav4,.nav5,.nav6'], .1, {
-        //     x: -20,
-        //     opacity: 0
-        // }, {
-        //     x: 0,
-        //     opacity: 1
-        // }, 0.1, 0);
     }
 }

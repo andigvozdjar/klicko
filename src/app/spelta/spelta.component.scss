@@ -23,6 +23,7 @@
     background-position: center center;
     background-size: cover;
     height: 32vh;
+    overflow: hidden;
 
   }
   .main-content {
@@ -47,9 +48,33 @@
     // letter-spacing: 50px;
   }
   
-@media (max-width: 620px) {
+@media (max-width: 862px) {
   .bottom-text {
     font-size: 1rem;
     font-weight: 400;
   }
 }
+@media (max-height: 620px) {
+  .main-content-spelta{
+    top: 50vh;
+
+  }
+}
+@media (max-width: 620px) {
+  .main-content-spelta{
+    top: 50vh;
+
+  }
+}
+
+@media (max-width: 535px) {
+  .tacnaSpelta{
+    height: 40vh;
+  }
+}
+@media (max-width: 444px) {
+  .tacnaSpelta{
+    height: 55vh;
+  }
+}
+

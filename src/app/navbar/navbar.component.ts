@@ -30,12 +30,13 @@ export class NavbarComponent implements OnInit {
     console.log(this.aColor);
     this.gsap.timelineDef();
   }
-  aboutUs(){
-    window.scrollTo(0, window.innerHeight);
-    this.router.navigateByUrl('')
+  navigate(route: string){
+    window.scrollTo(0, 0);
+    // ne znam za sta je innerHeight
+    // window.scrollTo(0, window.innerHeight);
+    this.router.navigateByUrl(route)
+    this.openCloseNav();
   }
-
-
   openCloseNav(){
     this.gsap.openCloseNav(window.innerWidth)
   }

@@ -23,3 +23,8 @@
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.726);
   }
+  @media (max-width: 444px) {
+    header.masthead {
+      height: 130vh;
+    }
+  }

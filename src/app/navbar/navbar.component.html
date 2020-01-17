@@ -40,23 +40,23 @@
   <div class="navigationCircle cursosPointer">
     <ul  class="navbar-nav darkNav mobile-nav-ul">
       <li class="nav-item nav1">
-        <a class="nav-link " (click)="aboutUs()" >O NAMA</a>
+        <a class="nav-link " (click)="navigate('')">O NAMA</a>
       </li>
       <li class="nav-item nav2">
-        <a class="nav-link " [routerLink]="['/klice']">Klice</a>
+        <a class="nav-link " (click)="navigate('/klice')">Klice</a>
       </li>
       <li class="nav-item nav3">
-        <a class="nav-link " [routerLink]="['/microgreens']">Povrce</a>
+        <a class="nav-link " (click)="navigate('/microgreens')">Povrce</a>
       </li>
       <li class="nav-item nav4">
-        <a class="nav-link " [routerLink]="['/sok-od-spelte']">Sok od
+        <a class="nav-link " (click)="navigate('/sok-od-spelte')">Sok od
           spelte</a>
       </li>
       <li class="nav-item nav5">
-        <a class="nav-link " href="#contact">Radionice</a>
+        <a class="nav-link ">Radionice</a>
       </li>
       <li class="nav-item nav6">
-        <a class="nav-link " href="#contact">Galerija</a>
+        <a class="nav-link ">Galerija</a>
       </li>
     </ul>
   </div>
