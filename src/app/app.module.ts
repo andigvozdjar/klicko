@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MicroComponent } from './micro/micro.component';
 import { SpeltaComponent } from './spelta/spelta.component';
 import { AnimationComponent } from './gsap-animations/animation.component';
+import { KliceDetailComponent } from './klice-detail/klice-detail.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AnimationComponent } from './gsap-animations/animation.component';
     FooterComponent,
     MicroComponent,
     SpeltaComponent,
-    AnimationComponent
+    AnimationComponent,
+    KliceDetailComponent
   ],
   imports: [
     BrowserModule,

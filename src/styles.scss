@@ -307,3 +307,10 @@ header.masthead p {
   }
 
 }
+
+@media (max-width: 576px) {
+  .lead {
+    font-size: .9rem !important;
+  }
+
+}
