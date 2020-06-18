@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GeneralService } from '../general.service';
 
 @Component({
   selector: 'app-micro',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MicroComponent implements OnInit {
 
-  constructor() { }
+  constructor(public generalService: GeneralService) { }
 
   ngOnInit() {
   }

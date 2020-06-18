@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GeneralService } from '../general.service';
 
 @Component({
   selector: 'app-klice',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KliceComponent implements OnInit {
 
-  constructor() { }
+  constructor(public generalService: GeneralService) { }
 
   ngOnInit() {
     // window.scroll(0,0);

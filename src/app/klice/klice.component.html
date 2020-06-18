@@ -1,211 +1,272 @@
 <app-navbar [aColor]="'black'"></app-navbar>
-  <header class="masthead text-center text-black d-flex">
-    <div class="container ">
-      <div class="row">
-        <div class="col-lg-8 offset-1 mainContent text-left">
-          <h1 class="text-uppercase mainHed mb-4">Vrste klica</h1>
-          <br>
-          <h2>Pogledajte našu <br> ponudu klica</h2>
-        </div>
-        <hr>
+<header class="masthead text-center text-black d-flex">
+  <div class="container ">
+    <div class="row">
+      <div class="col-12 mainContent text-left">
+        <h1 class="text-uppercase  mb-4">Klice</h1>
+        <br>
+        <!-- <h2>Pogledajte našu <br> ponudu klica</h2> -->
       </div>
-    </div>
-  </header>
-  
-  <section class="bg-primary">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="section-heading text-white text-center">Mungo grah&nbsp;</h2>
-          <hr class="light my-4">
-        </div>
-        <div class="col-md-7 order-2 order-md-1 m-auto text-center">
-          <div class="text-faded text-justify p-3 p-xl-5">
-            <p class="m-0 lead"> Klice mungo graha su hrskavog i svježeg okusa. Bogate proteinima i škrobom. One ne sadrže ulje. <br> Tijekom klijanja se uveliko povećava koncentracija vitamina: riboflavin je pet puta veći, niacin deset puta. <br>Bogate su vitaminom E, A i C, kao i željezom, kalcijem, kalijem, magnezijem i fosforom. Reguliraju razinu kolesterola, čiste krv i jetru.<br>
-             Mogu se jesti sirove ili kratko termički obrađene pa se često dodaje vok jelima s rižom , prosom i geršlom. Umjesto mesa kod umaka za tjesteninu, kao punjenje za tjesteninu ( tortelini ), u roladama, knedlama u jelima sa jajima , u povrtnim pecivima , za pizze  kao povrće u nabujcima ili se kratko blanširane poslužuju kao jestiva dekoracija.</p>
+      <!-- <div class="row mt-5 mt-sm-1">
+          <div class="col-1"></div>
+          <div class="col-10 col-sm-8 col-lg-5 text-justify mt-5 bg-white-text p-3">
+            
           </div>
-        </div>
-        <div class="col-md-5 col-8 m-auto order-1 order-md-2">
-          <img src="../../assets/img/mungo.png" alt="" class="img-fluid">
-        </div>
-      </div>
+        </div> -->
+      <hr>
     </div>
-  </section>
+    <div (click)="generalService.scrollTo()" class="container-scroll cursorPointer">
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+      <span class="text">Scroll down</span>
+    </div>
 
-  <section>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="section-heading text-black text-center">Alfalfa&nbsp;</h2>
-          <hr class=" my-4">
-        </div>
-        <div class="col-md-5 col-8 m-auto ">
-          <img src="../../assets/img/alfa.png" alt="" class="img-fluid">
-        </div>
-        <div class="col-md-7  m-auto text-center ">
-          <p class="text-black text-justify my-4 p-3 p-xl-5  lead ">
-            Klice alfalfa ili lucerke  spadaju među najpopularnije klice. Najčešće se zbog svog ukusa i izgleda koriste kao dodatak / dekoracija raznim jelima, ali ono što je manje poznato jesu njihova ljekovita svojstva: 
-            Jačanje imunog sistema – Klice lucerke su bogate saponinima, hemijskim jedinjenjem koje igra važnu ulogu u jačanju imunog sistema aktiviranjem prirodnih ćelija ubica, T-limfocita i interferona.
-            <small [routerLink]="['alfalfa']" class="text-info cursorPointer">vidi više</small>
-
+  </div>
+</header>
+<section class="bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-heading text-white text-center">&nbsp;
+          Šta su klice ?
+        </h2>
+        <hr class="light my-4">
+      </div>
+      <div class="col-md-12 order-2 order-md-1 m-auto text-center">
+        <div class="text-white text-justify p-3 p-xl-5">
+          <p class="m-0 lead">
+            Klijanje sjemena dolaze iz naše organske farme što garantuje nedostatak pesticida i umjetnih gnojiva. Čini
+            ih potpuno prirodnim, organskim proizvodom s visokim prehrambenim svojstvima.
+            Klijanje je buđenje sjemena nakon dugog mirovanja, te prestavlja izninumno aktiviranje svih važnih
+            supstanci, tako da konzumiranjem dobijamo:
           </p>
-          <!-- <p> Antiinflamatorna svojstva – ova svojstva saponina pomažu u spriječavanju šloga, smanjuju inflamatorni proces kod artritisa i snižavaju hronične inflamatorne procese.
-              Holesterol – saponini pomažu snižavanje lošeg holesterola (LDL), uz održavanje nivoa dobrog holesterola (HDL)
-              Antioksidanti – klice lucerke su poznate kao jedna od namirnica sa najvišim procentom antioksidanata, koji su od ključnog značaja za jačanje imunog sistema, kao i borbu protiv slobodnih radikala. Antioksidanti pomažu u prevenciji srčanih oboljenja, moždanog udara i raka.
-              Poboljšanje zdravlja srca – zbog svojih anti-inflamatornih svojstava, saponini su djelotvorni protiv ateroskleroze, kao i drugih kardiovaskularnih oboljenja.
-              Poboljšanje zdravlja kostiju – Estrogen, jedinjenje koje se nalazi u klicama lucerke, pomaže spriječavanju osteoporoze tako što povećava stepen formiranja kostiju i poboljšava gustinu kostiju.
-              Kontrola šećera u krvi – zabilježeno je smanjenje nivoa šećera u krvi kod pacijenata koji su koristili klice lucerke u svakodnevnoj ishrani.
-              Antikancerogena svojstva – klice lucerke su bogate i kanavaninom, aminokisjelinom koja je korisna u borbi protiv leukemije, raka pankreasa i raka debelog crijeva, kao i fibrocističnih tumora dojke.
-              Gojaznost – klice lucerke su izuzetno ukusne, niskokalorične, bogate proteinima i vlaknima, tako da se mogu koristiti kao odlična alternativa masnoj i kaloričnoj hrani, čime se direktno utiče na smanjenje masnih naslaga u tijelu.
-              Kako nemaju negativnih dejstava, klice lucerke mogu se koristiti u svakom obroku, kao i tokom svih životnih doba.
-          </p> -->
+          <div class="row mt-3">
+            <div class="col-sm-4 col-6 mt-4">
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Vitamine
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>Vitamine A, B, C i E. prilikom klijanja vrijednosti se uvečavaju i preko 20 puta.</p>
+              </mat-expansion-panel>
+            </div>
+            <div class="col-sm-4 col-6 mt-4">
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Masne kiseline
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>Sadržaj esencijalnih masnih kiselina također buja pri klijanju.</p>
+              </mat-expansion-panel>
+            </div>
+            <div class="col-sm-4 col-6 mt-4">
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Vlakna  
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>Najvažnija za probavu i mršavljenje, jer se vežu na masti i toksine u našem tijelu i olakšavaju njihovo odstranjivanje.</p>
+              </mat-expansion-panel>
+            </div>
+            <div class="col-sm-4 col-6 mt-4">
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Klorofila
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>Vitalizira organizam i daje mu kisik nazivamo ga još biljna krv ili eliksir života.</p>
+              </mat-expansion-panel>
+            </div>
+            <div class="col-sm-4 col-6 mt-4">
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Proteina 
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>Biljni proteini smanjuju krvni pritisak, tjelenu težinu, smanjuju rizik od bolesti srca smanjiti razinu šečerau krvi.</p>
+              </mat-expansion-panel>
+            </div>
+            <div class="col-sm-4 col-6 mt-4">
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Enzimi
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>Enzimi su posebne vrste bjelančevina koje djeluju kao katalizatori za sve tjelesne funkcije koje prilikom klijanja narastu i do sto puta više od voća i povrća.</p>
+              </mat-expansion-panel>
+            </div>
+            <div class="col-6 m-auto pt-4">
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Minerale
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>Tijekom klijanja minerali se vežu za bjelančevine, što tijelu olakšava njihovu apsorpciju. To vrijedi i za alkalne minerale kao što su kalcij, magnezij, željezo, kalij i mangan koji alkaliziraju tjelo te nedozvoljavaju širenju kancera koji traži kiseo organizam.</p>
+              </mat-expansion-panel>
+            </div>
+            <div class="col-12 mt-4">
+              <p class="lead text-center">
+                Klice moraju biti sasvim svježe i treba ih čuvati u hladnjaku. 
+              </p>
+            </div>  
+          </div>      
         </div>
       </div>
+      
     </div>
-  </section>
-  <div class="lineDivDark my-3 "></div>
-  <section>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="section-heading text-black text-center">Rotkvice&nbsp;</h2>
-          <hr class=" my-4">
-        </div>
-        <div class="col-md-5 col-12 m-auto">
-          <img src="../../assets/img/china.png" alt="" class="img-fluid">
-          <h3 class="text-center">China rose</h3>
-        </div>
-        <div class="col-md-5 col-12 m-auto">
-          <img src="../../assets/img/daikon.png" alt="" class="img-fluid">
-          <h3 class="text-center">Daikon</h3>
-        </div>
-        <div class="col-9 mx-auto mt-4 text-center">
-          <p class="lead">Klice rotkvice su bogate vlaknima, vitmanom C, folnom kiselinom, kalijumom, a sadrže vrlo malo kalorija, zbog čega su odlična namirnica za proljetno čišćenje organizma. <br>
-            Sumporni heterozidi daju rotkvici specifičan miris i ljutinu, a što je klica rotkvice ljuća, to je zdravija i korisnija za organizam. <br> Na varenje najbolje utiču kada se jedu svježe i sirove, pa ih jedite kao salatu ili prosto grickajte dok gledate televiziju, i na taj način ubrzajte vaš metabolizam.
-            <br> Indijski naučnici otkrili su da klice rotkvice izazivaju apoptozu – odnosno drugim riječima ubijaju ćelije raka.  <small [routerLink]="['rotkvice']" class="text-info cursorPointer">vidi više</small>
-            <!-- One su naročito djelotvorne kao prevencija ili pomoć kod liječenja raka debelog crijeva. Pored toga, uspješno “napadaju” i ćelije raka bubrega, želuca i usne duplje.
-            Klice rotkvice pomažu kod hroničnih oboljenja disajnih puteva i djeluju kao prirodni inhalator. One, naime, pozitvno djeluju na izlučivanje sluzi iz disajnih organa, zbog čega se preporučuju svima koji imaju problema sa začepljenjim nosom, čestim upalama sinusa i infekcijama dijasnih puteva, te boluju od astme ili bronhitisa.
-            Vlakna, vitamini i minerali iz klica rotkvice poboljšaće zdravlje kardiovaskularnog sistema jer snižavaju holesterol, sprečavaju dijabetes, regulišu krvni pritisak i nivo šećera u krvi.
-            Unošenjem klica rotkvice u organizam stimulišete rad jetre i žučne kese i čistite krv. Vlakna iz rotkvica podstiču lučenje probavnih sokova i regulišu pražnjenje crijeva, pa organizam lakše izbacuje toksine, a posebno se preporučuju osobama koje pate od zatvora.
-            Klice rotkvice su vrlo efektivne u sprečavanju infekcija urinarnog trakta.  Mogu da ublaže simptome, kao i peckanje tokom infekcije urinarnog trakta, te da pomogne da se infekcija brže izliječi.
-            Rotkvica stimuliše proizvodnju žuči, što je veoma važno za zdravlje jetre. Sadrži materije koje regulišu proizvodnju bilirubina, pa je odlična namirnica i u borbi protiv žutice.
-            S obzirom da su klice rotkvice bogate vlaknima i vitaminima koji regulišu probavu, zadržava vodu i liječi zatvor, one su odličan borac i protiv hemoroida. 
-            Ova namirnica pomaže i u borbi protiv bubuljica i akni, čak i najupornijih i najproblematičnijih, a u ove svrhe možete piti sok, ali i nanositi masku napravljenu od ove namirnice. Masku možete lako napraviti i sami tako što ćete rotkvice samljeti u blenderu, a potom dobijenu smjesu pomiješati sa malo vode. Masku nanesite na lice nježno trljajući vrhovima prstiju. Umijte se, pokupite višak vode peškirom i sačekajte 5 minuta da se koža u potpunosti osuši.
-            Konzumacija klica od rotkvice pomaže u borbi protiv bubuljica i akni a djelotvorne su i za  zdravlje vaše kose.  -->
-            </p>
-        </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-heading text-black text-center">Mungo grah&nbsp;</h2>
+        <hr class=" my-4">
       </div>
-    </div>
-  </section>
-  <div class="lineDivDark my-3 "></div>
-  <section>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="section-heading text-black text-center">Piskavica&nbsp;</h2>
-          <hr class=" my-4">
-        </div>
-        <div class="col-md-7 order-2 order-md-1 m-auto text-center">
-          <p class="text-black text-justify mb-4 p-3 p-xl-5 lead">
-            Klice  piskavice su bogat izvor proteina, minerala, vitamina i fitonutrijenata.
-            Među ljekovitim spojevima su kolin, trigonelin diosgenin, jamogenin, tigogenin i neotigogenin. <br>
-            Od vrijednih minerala, sadrži bakar, željezo, magnezij i mangan.
-
-            To je jedna od najstarijih ljekovitih biljaka koja datira još od doba starih Egipćana i Hipokrata. <br>
-
-            Piskavica (lat. Trigonella foenum-graecum), može se svrstati u prirodna čuda antičkog doba, kada je bila izvanredno hvaljena i cijenjena.<small [routerLink]="['piskavica']" class="text-info cursorPointer">vidi više</small>
-            <!-- Piskavica smiruje i liječi sluznicu dišnog, probavnog i urogenitalnog trakta. Snižava kolesterol u krvi već nakon 10 dana primjene. Djelotvorna je protiv alergija, stimulira metabolizam jetre i bubrega te općenito zagrijava tijelo.
-            Piskavicom se ostvaruju odlični rezultati u liječenju dijabetesa. Uspostavlja ravnotežu šećera u krvi kod oba tipa dijabetesa zahvaljujući aminokiselini 4-hidroksi- izoleucin, koja kontrolira lučenje inzulina. Prema nekim navodima uzimanje 50 g piskavice na dan u prosjeku dovodi do 30-postotnog poboljšanja nalaza već u roku od 10 dana.
-            Popularna je i kod tretmana kardiovaskularnih problema, jer snizuje kolesterol i razine triglicerida te pomaže protiv ateroskleroze i stvrdnjavanja arterija. -->
+      <div class="col-md-5 col-8 m-auto ">
+        <img src="../../assets/img/mungo.png" alt="" class="img-fluid ">
+      </div>
+      <div class="col-md-7  m-auto text-center ">
+        <div class="text-black text-justify my-4 p-3 p-xl-5  lead ">
+          <p>
+            Čisti organizam od toksina i jača funkciju jetre.
           </p>
-        </div>
-        
-        <div class="col-md-5 col-8 order-1 order-md-2 m-auto ">
-            <img src="../../assets/img/piskavica.png" alt="" class="img-fluid">
-          </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="section-heading text-black text-center">Pšenica&nbsp;</h2>
-          <hr class=" my-4">
-        </div>        
-        <div class="col-md-5 col-8 m-auto ">
-            <img src="../../assets/img/psenica2.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="col-md-7 m-auto text-center">
-          <p class="text-black text-justify mb-4 p-3 p-xl-5 lead">
-            „Proklijala zrna psenice sadrze niz bioloski aktivnih supstanci, vitamine E, C, grupe B, ugljene hidrate, bjelančevine, biljna vlakna, minerale, narocito fosfor, kalijum, magnezijum.“ – kaze ruski ljekar Mihail Gurvic. <br>
-            Psenicne klice su mocan bioloski stimulans: ima antioksidantna svojstva, normalizuje metabolizam, poboljsava krv i metabolizam. <br>
-            Proklijala zrna psenice u sebi sadrze esencijalne amino kiseline i povecani vise puta- broj svih vitamina, koji su neophodni nasem organizmu.
-            <!-- ⦁	Psenica je bogata kalijumom, sto cini nase misice jacim, a takodje jaca i srcani misic. Hrom i litijum u zrnima, su rijetki minerali koji  imaju pozitivno dejstvo na nervni sistem i stite nas od nervnog „izgladnjivanja“(stresa).
-            ⦁	Spoljasnje ljuske zrna su bogate vlaknima, koja imaju blagotvorno dejstvo na varenje i stimulaciju creva. Redovno konzumiranje proklijalih zrna psenice moze posluziti kao prevencija od raka debelog creva i rektuma. Vlakna u zrnima pomazu u odrzavanju optimalne ravnoteze crevne mikroflore i uklanjanju toksina iz organizma.
-            ⦁	Produžena upotreba proklijale psenice poboljsava vid i ima pozitivan uticaj na zube, kosu, nokte i kozu.
-            ⦁	Psenicne klice mogu se preporuciti onima koji su odlucili ⦁	izgubiti tež⦁	inu. Čvrste klice zahtevaju dugo i temeljno zvakanje. Osecaj sitosti, kao sto znamo, pojavljuje se neko vreme posle obroka, tako da je duzi proces obavljanja jela moze smanjiti kolicinu hrane.
-            Evo zakljucka naucnika naturopata o koristi psenicne klice u ishrani:
-            ⦁	regulise, obnavlja i stabilizuje pravilno funkcionisanje vitalnih funkcija tela u bilo kom zivotnom dobu
-            ⦁	podmladjuje i stabilizuje sve sisteme organizma
-            ⦁	eliminise razlicite neoplazme malignih i benignih tumora, polipa, fibroida
-            ⦁	obogacuje krv kiseonikom
-            ⦁	gase razlicite infekcije i zapaljenske procese
-            ⦁	uklanjaju iz organizma stetne materije, toksine, visak holesterola
-            ⦁	normalizuju i stabilizuju metabolizam, ciste creva
-            ⦁	ojacavaju ceo kardiovaskularni sistem
-            ⦁	pomazu zdravom gubitku suvisnih kilograma: 3-4 kasike psenicnih klica zamenjuju obilan dorucak
-            Treba znati i to da su psenicne klice prilicno teska hrana za stomak, tako da je najbolje nju unositi u organizam ujutru. Ljudi sa bolestima gastrointestinalnog trakta prije upotrebe proklijale psenice treba da konsultuju svog lekara. -->
-            
-            
-            
-            
-            <!-- Postoje brojna naučna ispitivanja o djelotvornosti pšeničnih klica na ljudski organizam. 
-            Izdvajamo
-            Poznatog ruskog naučnika, profesora Hrista Mermerskog i njegov recept za liječenje. 
-            “To je hrana za liječenje kompletnog organizma, a rak se u takvom organizmu samo povuče”, rekao je u svojim predavanjima prof. Mermerski.
-            Tajna je u tome što ova smjesa čisti krvne žile, liječi srce, obnavlja imunitet, čisti jetru i bubrege. Takođe, poboljšava rad mozga i pamćenje, čuva od infarkta i dovodi do izlečenja onih koji su doživeli infarkt ili moždani udar. Mnogi govore i da je reč o najboljem sredstvu protiv svih vrsta raka!
-            Sastojci  za pripremanje eliksira
-            15 svježih neprskanih limuna,
-            12 glavica svežeg bijelog luka,
-            1 kg livadskog meda,
-            400 g svježih pšeničnih klica pšenice
-            400 g oraha.
-            Priprema ljeka
-            Samljeti zajedno proklijalu pšenicu, orahe i očišćene glavice bjelog luka. Samljeti 5 limunova sa koricom, pa sve zajedno izmješati. Od ostalih 10 uzeti samo sok i pomješati sa ostalom masom, dok smjesa ne postane homogena.
-            Dodati med i duže mješati drvenom kašikom, pa sipati u staklene posude. Ostavite ih da stoje 3 dana u frižideru, pa onda možete početi sa konzumiranjem.
-            Primjena lijeka
-            Ova hrana uzima se 30 minuta prije doručka, prije ručka, prije večere i prije spavanja. Ako je koristite za liječenje raka, uzimajte jednu do dve kašike svaka 2 sata.
-            Profesor Mermerski kaže da recept garantuje zdravlje i dug život, kao i izlječenje od raka, očuvanje svježine tijela, mladosti i energije.
-            "Ovaj lijek sadrži sve neophodne vitamine, mineralne soli, bioaktivne supstance, proteine, ugljene hidrate i biljne masti. Zato i poboljšava rad svih unutrašnjih organa i žlijezda, koje održavaju tijelo zdravim, a dovodi i do izlječenja od raka u potpunosti", istakao je doktor. -->
-             
-          </p>
+          <p>
+            Najpoznatija je Aziskim zemljama ali ju je i cijeli svjet prihvatio kao najpopularniju klicu, vrlo slasna , prijatno hrskava,daje sitost te prilikom blendanja dobijamo kremastu teksturu.
+          </p>          
+          Klice mungo graha pomažu dezinfekciji krvi i jetru te reguliše kolesterol. <br> One čiste organizam od toksina i jačaju funkciju jetre i krvi, a u sebi sadrže vitamin,proteine,  folnu kiselinu, mnogo minerala poput kalcija, cinka, željeza i magnezija, kao i B vitamine. 
+          <small [routerLink]="['mungo grah']" class="text-info cursorPointer">vidi više</small>
         </div>
       </div>
     </div>
-  </section>
-  <section>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="section-heading text-black text-center">Leće&nbsp;</h2>
-          <hr class=" my-4">
-        </div>
-        <div class="col-md-7 order-2 order-md-1 m-auto text-center">
-          <p class="text-black text-justify mb-4 p-3 p-xl-5 lead">
-            Klice leće smanjuju holesterol u krvi – sadrži visoku dozu topljivih vlakana. Smanjenjem razine kolesterola u krvi smanjujete rizik od moždanog udara i srčanih bolesti.
-            <br> Zdravlje srca – leća je veliki izvor magnezija i  folata. Folat smanjuje razinu homocisteina dok	magnezij poboljšava protok krvi. Nedostatak magnezija izravno je povezan s bolestima srca stoga je leća odličan saveznik u očuvanju vašeg zdravlja.
-            <br> Probava – netopljiva dijetalna vlakna u leći pomažu kod problema s probavom i podržavaju raznovrsnu crijevnu mikrofloru. 
-            <!-- Bogata je proteinima – od svih mahunarki i orašastih plodova leće sadrže najveću količinu proteina. Čak 26% nutrijenata u leći otpada na proteine što je čini idealnim izborom za vegane i vegetarijance.
-            Iako klice leća obuhvataju sve korisne hranjive tvari poput vlakana, proteina, minerala i vitamina, i dalje imaju nisku kaloričnu vrijednost i ne sadrži gotovo nikakve masnoće. -->
+  </div>
+</section>
 
-          </p>
-        </div>
-        
-        <div class="col-md-5 col-8 m-auto order-1 order-md-2">
-            <img src="../../assets/img/lece.jpg" alt="" class="img-fluid">
-          </div>
+<div class="lineDivDark my-3 "></div>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-heading text-black text-center">Alfalfa&nbsp;</h2>
+        <hr class=" my-4">
+      </div>
+      <div class="col-md-5 col-8 m-auto ">
+        <img src="../../assets/img/alfa.png" alt="" class="img-fluid ">
+      </div>
+      <div class="col-md-7  m-auto text-center ">
+        <p class="text-black text-justify my-4 p-3 p-xl-5 lead">
+          Sadrže mnoštvo vitamina, minerala, proteina, vlakna i klorofil, alkaliziraju tijelo i potiču samu apsorpciju proteina. <br>Sprečavaju nastanak osteoporeze, srčanih bolesti, dijabetisa, ublažavaju simptone menopauze, liječi bolesti crijeva i želučanih problema.
+          <br> <br>
+          Ima visok udio vitamina A, C, D, E i K te vitamine B kompleksa.
+          Odlične za pipremanje smoothie napitaka, posjeduju posebnu sočnost koju djeca prepoznaju i vole <br><br>
+          Blagog su okusa tako da ih možemo koristiti kao prilog raznim jelima salatama i pojedinačno kao nešto zdravo, neobično, sočno i odlično umjesto svih grickalica.
+          <small [routerLink]="['alfalfa']" class="text-info cursorPointer">vidi više</small>
+        </p>
       </div>
     </div>
-  </section>
-  <router-outlet></router-outlet>
+  </div>
+</section>
+<div class="lineDivDark my-3 "></div>
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-heading text-black text-center">Rotkvice&nbsp;</h2>
+        <hr class=" my-4">
+      </div>
+      <div class="col-md-5 col-12 m-auto">
+        <img src="../../assets/img/china.png" alt="" class="img-fluid ">
+        <h3 class="text-center">China rose</h3>
+      </div>
+      <div class="col-md-5 col-12 m-auto">
+        <img src="../../assets/img/daikon.png" alt="" class="img-fluid ">
+        <h3 class="text-center">Daikon</h3>
+      </div>
+      <div class="col-9 mx-auto mt-4 text-center">
+        <p class="lead">
+          Nutricionisti preporučuju daikon dijeta, kao jedan od najučinkovitijih i uravnoteženih za one koji žele izgubiti težinu i poboljšati funkcionisanja kompletnog organizma jer ga čisti a poboljšava vid.
+          <small [routerLink]="['rotkvice']" class="text-info cursorPointer">vidi više</small> </p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="lineDivDark my-3 "></div>
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-heading text-black text-center">Piskavica&nbsp;</h2>
+        <hr class=" my-4">
+      </div>
+      <div class="col-md-7 order-2 order-md-1 m-auto text-center">
+        <p class="text-black text-justify mb-4 p-3 p-xl-5 lead">
+          Grci su koristili klice piskavice za snagu prije borbe. <br>
+          Potvrđeno je znanstvenim studijama da je piskavica vrlo djelotvorna u slučaju hormonskog disbalansa, posebno u menopauzi i tijekom PMS-a. 
+          Stimulira proizvodnju mlijeka kod dojilja, djeluje na sniženje razine šećera u krvi, “lošeg” kolesterola i krvnog tlaka, smanjuje apetit, 
+          djeluje protiv bolnih menstruacija, umanjuje žgaravicu, regulira koncentraciju šećera u krvi za oba tipa dijabetisa.
+          Djeluje na povišenje koncentracije testosterona i libida kod muškaraca.
+          <small [routerLink]="['piskavica']" class="text-info cursorPointer">vidi više</small>
+        </p>
+      </div>
+
+      <div class="col-md-5 col-8 order-1 order-md-2 m-auto ">
+        <img src="../../assets/img/piskavica.png" alt="" class="img-fluid ">
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-heading text-black text-center">Klice pšenice – <small>podmlađuju tijelo i daju mu odličnu energiju.</small>&nbsp;</h2>
+        <hr class=" my-4">
+      </div>
+      <div class="col-md-5 col-8 m-auto ">
+        <img src="../../assets/img/psenica2.jpg" alt="" class="img-fluid ">
+      </div>
+      <div class="col-md-7 m-auto text-center">
+        <p class="text-black text-justify mb-4 p-3 p-xl-5 lead">
+          Klice pšenice potiču rad metabolizma i uklanjaju stres. Sadrže bjelančevine, kalij, kalcij, fosfor, željezo, jod, natrij, magnezij, vitamin E i B te su bogate i vlaknima. <br><br>
+          Ukusan su dodatak salatama, juhama, jelima s pahuljicama i desertima. Velika količina kalcija je korisna za žene. <br><br> Redovita konzumacija pšeničnih klica jača kosu - čini je glatkom i svilenkastom. 
+          Nokti postaju jači i jači, a kosti su zbijenije. Drobljena kaša od pšeničnih klica se koristi kao maska ​​za lice koja izglađuje bore.
+          <br><br>
+          Povečava fukciju oplodnje kod muškaraca. 
+          Tri kašike pšeničnih klica dnevno sigurno dovodi do gubljenja kilograma.
+          <small [routerLink]="['klice-pšenice']" class="text-info cursorPointer">vidi više</small>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-heading text-black text-center">Leće&nbsp;</h2>
+        <hr class=" my-4">
+      </div>
+      <div class="col-md-7 order-2 order-md-1 m-auto text-center">
+        <p class="text-black text-justify mb-4 p-3 p-xl-5 lead">
+          Bogate su proteinima, ugljikohidratima ,vlaknima i mineralima kao što su magnezij, željezo, cink, folat, fosfor, kalij, bakar. Posjeduju i vitamine C i B. <br>
+          Djeluju kao diuretik, jačaju srce i imuni sustav, reguliše rad jetre. Ima nizak glukemijski indeks te je dobar za dijabetičare i anemičare. <br>
+          Idealan su dodatak sokovima od povrća, salatama i pirjanim jelima. Prilikom upotrebe su jako zasitne i lako probavljive. 
+          Prilikom miksanja dobijamo hranjivi kremasti smuti, a naša preporuka u smutije uvjek dodavati limun ili naranču. 
+        </p>
+      </div>
+
+      <div class="col-md-5 col-8 m-auto order-1 order-md-2">
+        <img src="../../assets/img/lecePng.png" alt="" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+<router-outlet></router-outlet>

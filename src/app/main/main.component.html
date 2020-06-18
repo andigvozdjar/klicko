@@ -22,10 +22,10 @@
           <div class="col-lg-10 col-12 mx-auto text-center">
             <h2 class="section-heading text-white">Saznajte više o nama i našoj proizvodnji&nbsp;</h2>
             <hr class="light">
-            <p class="text-faded lead">Ideja je nastala u našoj kući i izrasla je iz nekog našeg porodičnog hobija.</p> 
-            <p class="text-faded lead">Ubijeđeni smo da današnja konvencijalna hrana, koju svi manje više konzumiramo, uzrokuje određene zdravstvene probleme. Iz tog razloga, koliko je moguće, biramo hranu za sebe.
+            <p class="text-white lead">Ideja je nastala u našoj kući i izrasla je iz nekog našeg porodičnog hobija.</p> 
+            <p class="text-white lead">Ubijeđeni smo da današnja konvencijalna hrana, koju svi manje više konzumiramo, uzrokuje određene zdravstvene probleme. Iz tog razloga, koliko je moguće, biramo hranu za sebe.
               Tako smo 2016. počeli eksperimentisati sa kućnom proizvodnjom klica za vlastite potrebe, a sticajem okolnosti kasnije i za Vaše. </p>
-            <p class="text-faded lead">
+            <p class="text-white lead">
               Trenutno smo ozbiljni proizvođači klica biljaka, mikropovrća te ljekovitog soka od trave pšenice i spelte.
               Za sve naše proizvode koristimo isključivo certificirana organska sjemena.
               Naš cilj je da ljudimo približimo naša iskustva te podijelimo blagodat naših proizvoda sa svima onima koji to žele.
@@ -48,24 +48,28 @@
       <div class="container productsCont">
         <div class="row">
         <div class="col-lg-3 col-6 p-4 p-lg-4 text-center">
-           <a  class ="textno" [routerLink]="['/klice']">
+           <a [routerLink]="['/klice']">
             <div class="service-box mt-5 mx-auto"><em class="fas fa-4x mb-3 sr-icon-3"><img src="../../assets/img/klice.jpg" class="img-fluid" alt=""/></em>
-              <h3 class="mb-3 " > klice </h3>
+              <h3 class="mb-3">klice</h3>
               <p class="text-muted mb-0">najzdraviji oblik biljke, mineralno energetske bombe</p>
             </div>
             </a>
           </div>
           <div class="col-lg-3 col-6 p-4 p-lg-4 text-center">
-            <div class="service-box mt-5 mx-auto"><img src="../../assets/img/mikro.jpg"  class="img-fluid" alt=""/>
-              <h3 class="mb-3">mikropovrće&nbsp;</h3>
-              <p class="text-muted mb-0">malo starije od klica, ali svojim izgledom i ukusom najviše mame</p>
-            </div>
+            <a [routerLink]="['/microgreens']">
+              <div class="service-box mt-5 mx-auto"><img src="../../assets/img/mikro.jpg"  class="img-fluid" alt=""/>
+                <h3 class="mb-3">mikropovrće</h3>
+                <p class="text-muted mb-0">malo starije od klica, ali svojim izgledom i ukusom najviše mame</p>
+              </div>
+            </a>
           </div>
           <div class="col-lg-3 col-6 p-4 p-lg-4 text-center">
-            <div class="service-box mt-5 mx-auto"><img src="../../assets/img/psenica.jpg"  class="img-fluid" alt=""/>
-              <h3 class="mb-3">sok od pšenične trave</h3>
-              <p class="text-muted mb-0">zelena krv</p>
-            </div>
+            <a [routerLink]="['/sok-od-spelte']">
+              <div class="service-box mt-5 mx-auto"><img src="../../assets/img/psenica.jpg"  class="img-fluid" alt=""/>
+                <h3 class="mb-3">sok od pšenične trave</h3>
+                <p class="text-muted mb-0">zelena krv</p>
+              </div>
+            </a>
           </div>
           <div class="col-lg-3 col-6 p-4 p-lg-4 text-center">
             <div class="service-box mt-5 mx-auto"><img src="../../assets/img/srce.jpg"  class="img-fluid" alt=""/>

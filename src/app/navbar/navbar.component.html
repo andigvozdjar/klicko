@@ -12,7 +12,7 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto Color">
         <li class="nav-item">
-          <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger" (click)="aboutUs()" >O NAMA</a>
+          <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger" href="#about">O NAMA</a>
         </li>
         <li class="nav-item">
           <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger" 
@@ -20,19 +20,18 @@
         </li>
         <li class="nav-item">
           <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger"
-            [routerLink]="['/microgreens']">Povrce</a>
+            [routerLink]="['/microgreens']">Mikropovrće</a>
         </li>
         <li class="nav-item">
           <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger"
-            [routerLink]="['/sok-od-spelte']">Sok od
-            spelte</a>
+            [routerLink]="['/sok-od-spelte']">Sok od spelte</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger" href="#contact">Radionice</a>
         </li>
         <li class="nav-item">
           <a [ngClass]="{'darkNav': aColor=='black'}" class="nav-link js-scroll-trigger" href="#contact">Galerija</a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
